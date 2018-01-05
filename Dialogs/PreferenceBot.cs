@@ -7,7 +7,7 @@ using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
 using System.Net.Http;
 
-namespace Preferences.Bots
+namespace Microsoft.Bot.Sample.SimpleEchoBot
 {
 	[LuisModel("ac8a29cf-3256-4e7f-bb97-623e7d9396af","c9ade14249004580b62f6f4405f91ddb")]
 	[Serializable]

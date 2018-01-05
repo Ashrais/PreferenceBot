@@ -23,7 +23,9 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
             if (activity != null && activity.GetActivityType() == ActivityTypes.Message)
             {
                 //await Conversation.SendAsync(activity, () => new EchoDialog());
+                //added new code
                 await Conversation.SendAsync(activity, () => new PreferenceBot());
+                
             }
             else
             {

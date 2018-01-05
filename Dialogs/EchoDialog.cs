@@ -38,7 +38,7 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
                 client.BaseAddress = new Uri("http://localhost:64195/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(
-                    new MediaTypeWithQualityHeaderValue("application/json"));
+                    new Headers.MediaTypeWithQualityHeaderValue("application/json"));
                 
                 await context.PostAsync($"{this.count++}: You said {message.Text}");
                 context.Wait(MessageReceivedAsync);
